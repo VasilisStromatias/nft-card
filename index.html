@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Card</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container">
+        <img
+          class="main-image"
+          src="./images/image-equilibrium.jpg"
+          alt="eth"
+        />
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilirium collection promotes balance and calm.</p>
+        <div class="section">
+          <div class="eth">
+            <img src="./images/icon-ethereum.svg" alt="" />
+            <p>0.041 ETH</p>
+          </div>
+          <div class="days-left">
+            <img src="./images/icon-clock.svg" alt="" />
+            <p>3 days left</p>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="creator">
+          <div class="creator-inner">
+            <img src="./images/image-avatar.png" alt="" />
+            <p>Creation of <span>Vasilis Stromatias</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
